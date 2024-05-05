@@ -1,0 +1,12 @@
+{
+  "header": {
+    "shipping": "Miễn phí ship cho đơn hàng từ 300k"
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "shop": "Cửa hàng",
+    "blog": "Bài viết",
+    "login": "Đăng nhập",
+    "register": "Đăng ký"
+  }
+}

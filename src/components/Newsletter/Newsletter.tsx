@@ -1,11 +1,13 @@
 import Image from "next/image";
+import { Button, Input } from "@/components";
+import { FiMail } from "react-icons/fi";
 
 export default function NewsLetter() {
   return (
-    <div className="bg-neutral-50 relative h-44">
+    <div className="bg-neutral-50 relative h-56">
       <div className="absolute w-full h-full top-0 left-0">
         <Image
-          src="/banner-handmade.jpg"
+          src="https://eviromet.com/files/v1/viewFile/fed99212-d72b-4236-b38e-4a6ea808df07_banner-handmade.jpg"
           alt="banner"
           priority={true}
           sizes="100vw"
@@ -14,7 +16,7 @@ export default function NewsLetter() {
         />
       </div>
       <div className="w-full bg-neutral-700/10 h-full left-0 top-0 z-10 absolute">
-        <div className="container py-6 xl:py-0 h-full mx-auto flex flex-col xl:flex-row items-center justify-between">
+        <div className="container py-6 xl:py-0 h-full mx-auto flex flex-col xl:flex-row items-center justify-center xl:justify-between">
           <div className="text-center xl:text-left">
             <p className="uppercase text-green-600 text-sm">
               laoreet in vitas amet
@@ -25,14 +27,8 @@ export default function NewsLetter() {
             </p>
           </div>
           <div className="flex mt-4 xl:mt-0 items-stretch gap-4">
-            <input
-              className="ring-1 ring-neutral-400 active:ring-green-700 focus:ring-green-700 transition-all duration-200 hover:ring-green-600 px-4 py-2 h-10 bg-transparent rounded outline-none"
-              placeholder="Leave your email"
-              type="text"
-            />
-            <button className="px-4 py-2 hover:bg-green-800 active:ring-2 transition-all duration-300 active:ring-lime-500 rounded shadow-sm bg-green-600 text-white uppercase font-medium text-sm">
-              sign up
-            </button>
+            <Input iconStart={<FiMail className="text-neutral-600" />} />
+            <Button>Sign up</Button>
           </div>
         </div>
       </div>

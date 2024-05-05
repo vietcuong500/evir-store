@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #0a0a0a;
+  overflow-x: hidden;
+}
+
+input::placeholder {
+  color: #0a0a0a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  color: #0a0a0a;
+}
+
+@layer components {
+  .position-center {
+    @apply absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%];
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+
+#notistack-snackbar {
+  color: white;
+}

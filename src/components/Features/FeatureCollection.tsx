@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./FeatureSection.scss";
+import { useThemeConfig } from "@/contains/ThemesProvider/ThemesProvider";
+import queryString from "query-string";
 
 const settings = {
   dots: true,
@@ -35,24 +37,44 @@ const settings = {
 };
 
 export default function FeatureCollection() {
+  const { collection, lang } = useThemeConfig();
+  const { sub_title, title, desc, items } = collection;
+  const genUrl = (id: number) => {
+    const url = queryString.stringifyUrl({
+      url: `/${lang}/shop`,
+      query: {
+        page: 1,
+        page_size: 12,
+        collection: id,
+      },
+    });
+    console.log(url)
+    return url;
+  };
   return (
     <div>
       <div className="container mx-auto">
         <div>
           <p className="text-sm text-center font-medium text-green-600">
-            WOODEN ACCESSORIES
+            {sub_title}
           </p>
           <p className="text-xl uppercase text-neutral-800 font-medium text-center my-3">
-            FEATURED Categories
+            {title}
           </p>
           <p className="text-sm text-neutral-800 text-center font-light">
-            Visit our shop to see amazing creations from our designers.
+            {desc}{" "}
           </p>
         </div>
         <Slider {...settings} className="mt-6">
-          <CollectionCart />
-          <CollectionCart />
-          <CollectionCart />
+          {items.map((el: any, id: number) => (
+            <CollectionCart
+              key={id}
+              image={el.image}
+              name={el.title}
+              count={el.count}
+              link={genUrl(el.id)}
+            />
+          ))}
         </Slider>
       </div>
     </div>
