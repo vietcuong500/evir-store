@@ -20,7 +20,7 @@ export default function Header(props: any) {
             {/* <p className="h-full text-white leading-10 px-4 border-l border-neutral-100/50 cursor-pointer">
               VIETNAM
             </p> */}
-            <SelectLanguage />
+            
             <p className="h-full text-white leading-10 px-4 border-l border-neutral-100/50">
               {top.shipping}
             </p>
@@ -31,25 +31,26 @@ export default function Header(props: any) {
               <li className="cursor-pointer" onClick={() => window.open(top.fb_link, '_blank')}>
                 <FaFacebookF />
               </li>
-              <li className="cursor-pointer" onClick={() => window.open(top.tw_link, '_blank')}>
+              {/* <li className="cursor-pointer" onClick={() => window.open(top.tw_link, '_blank')}>
                 <FaTwitter />
-              </li>
+              </li> */}
               <li className="cursor-pointer" onClick={() => window.open(top.ins_link, '_blank')}>
                 <FaInstagram />
               </li>
-              <li className="cursor-pointer" onClick={() => window.open(top.yt_link, '_blank')}>
+              {/* <li className="cursor-pointer" onClick={() => window.open(top.yt_link, '_blank')}>
                 <FaYoutube />
-              </li>
+              </li> */}
             </ul>
             <p onClick={() => window.open(top.newsletter_link, '_blank')} className="h-full text-white uppercase leading-10 px-4 border-r border-neutral-100/50 cursor-pointer">
               newsletter
             </p>
-            <p onClick={() => window.open(top.contact_link, '_blank')} className="h-full text-white uppercase leading-10 px-4 border-r border-neutral-100/50 cursor-pointer">
+            {/* <p onClick={() => window.open(top.contact_link, '_blank')} className="h-full text-white uppercase leading-10 px-4 border-r border-neutral-100/50 cursor-pointer">
               Liên hệ
-            </p>
+            </p> */}
             <p onClick={() => window.open(top.faqs_link, '_blank')} className="h-full text-white uppercase leading-10 px-4 border-r border-neutral-100/50 cursor-pointer">
               faqs
             </p>
+            <SelectLanguage />
           </div>
         </div>
         <div className="flex xl:hidden h-10">

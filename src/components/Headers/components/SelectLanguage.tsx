@@ -28,7 +28,7 @@ export default function SelectLanguage(props: any) {
       >
         {i18n.locales.map((locale: string) => (
           <option className="text-black" value={locale} key={locale}>
-            {locale === "vi" ? "VIETNAME" : "ENGLISH"}
+            {locale === "vi" ? "VIETNAMESE" : "ENGLISH"}
           </option>
         ))}
       </select>
