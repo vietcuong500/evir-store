@@ -58,7 +58,7 @@ export default function HeroBanner() {
             </div>
           </div>
           <div className="flex items-stretch w-full h-1/2 gap-8">
-            <div className="w-2/3 relative h-full bg-neutral-100 p-5">
+            <div className="w-full relative h-full bg-neutral-100 p-5">
               <div className="relative z-10">
                 <p className="mb-4 uppercase text-green-600 text-sm">
                   {hero[2].sub_title}
@@ -82,14 +82,14 @@ export default function HeroBanner() {
                 ) : null}
               </div>
             </div>
-            <div className="w-1/3 h-full bg-neutral-100">
+            {/* <div className="w-1/3 h-full bg-neutral-100">
               {hero[3].image ? (
                 <img
                   src={hero[3].image}
                   className="w-full h-full object-cover"
                 />
               ) : null}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

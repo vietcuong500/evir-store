@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 import clsx from "clsx";
+import ImageZoom from "react-image-zooom";
+
 
 const settings = {
   dots: true,
@@ -50,7 +52,7 @@ export default function ProductImages(props: any) {
     <div className={`${className}`}>
       <Slider asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
         {files.map((el: any, id: number) => (
-          <img src={el} key={id} />
+          <ImageZoom key={id} src={el} zooom={300}/>
         ))}
       </Slider>
       <Slider
