@@ -8,14 +8,14 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 export default function ButtonAddCart(props: any) {
   const { item } = props;
   const { handleAddCart } = useAuth();
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
   const { image, name, id, price_current } = item;
   return (
     <div className="flex items-center gap-4 mt-3 max-w-[320px]">
       <div className="flex items-center border border-neutral-200">
         <button
           onClick={() => {
-            if (quantity > 1) setQuantity(quantity - 1);
+            if (quantity > 0) setQuantity(quantity - 1);
           }}
           className="w-9 h-9 flex-center hover:bg-green-600 hover:text-white"
         >

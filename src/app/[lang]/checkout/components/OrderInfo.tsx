@@ -39,6 +39,7 @@ function OrderInfo() {
               label="Quốc gia"
               error={!!errors["country"]}
               message={errors["country"]?.message}
+              required={true}
             />
           )}
         />
@@ -54,6 +55,7 @@ function OrderInfo() {
                 label="Thành phố"
                 error={!!errors["city"]}
                 message={errors["city"]?.message}
+                required={true}
               />
             )}
           />
@@ -65,9 +67,10 @@ function OrderInfo() {
                 name="postcode"
                 value={value}
                 onChange={onChange}
-                label="CODE"
+                label="CODE (Mã bưu điện)"
                 error={!!errors["postcode"]}
                 message={errors["postcode"]?.message}
+                required={true}
               />
             )}
           />
@@ -84,6 +87,7 @@ function OrderInfo() {
               error={!!errors["address"]}
               message={errors["address"]?.message}
               placeholder="Nhập địa chỉ nhận hàng"
+              required={true}
             />
           )}
         />
@@ -99,6 +103,7 @@ function OrderInfo() {
               error={!!errors["phone"]}
               message={errors["phone"]?.message}
               placeholder="Nhập số điện thoại"
+              required={true}
             />
           )}
         />
