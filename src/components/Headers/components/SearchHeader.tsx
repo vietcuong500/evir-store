@@ -16,7 +16,7 @@ export default function SearchHeader(props: any) {
   const drawer = useRef(null);
   const { lang } = useThemeConfig();
   const [loading, setLoading] = useState(false);
-
+  const inputSearch = useRef<any>(null);
   useClickAway(drawer, () => {
     if (open) setOpen();
   });
@@ -77,20 +77,19 @@ export default function SearchHeader(props: any) {
 
   useEffect(() => {
     if (open) {
+      inputSearch.current?.focus();
       document.querySelector("html")?.classList.add("overflow-hidden");
     } else {
       document.querySelector("html")?.classList.remove("overflow-hidden");
     }
   }, [open]);
 
-  console.log(loading)
-
   useDebounce(
     async () => {
-      setLoading(true)
+      setLoading(true);
       const data = await handleSearch(keyword);
       setList(data?.data);
-      setLoading(false)
+      setLoading(false);
     },
     1000,
     [keyword]
@@ -110,9 +109,10 @@ export default function SearchHeader(props: any) {
       >
         <div className="flex relative items-center w-full h-24">
           <input
+            ref={inputSearch}
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
-            className="absolute border-b border-neutral-300 w-full outline-none font-[playfair] h-full text-center text-3xl placeholder:text-3xl text-neutral-800 font-medium"
+            className="absolute border-b border-neutral-300 w-full outline-none font-[playfair] h-full text-center placeholder:text-neutral-400 text-3xl placeholder:text-3xl text-neutral-800 font-medium"
             placeholder="Tìm kiếm sản phẩm"
           />
           <FiX
