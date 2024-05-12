@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useAuth } from "@/contains/AuthProvider/AuthProvider";
 import { useEffect, useState } from "react";
+import { useThemeConfig } from "@/contains/ThemesProvider/ThemesProvider";
 
 const IconBottom = (props: any) => {
   const { icon, title, count, href } = props;
@@ -38,29 +39,30 @@ export default function HeaderMobile(props: any) {
   const { cart, wishlist } = useAuth();
 
   const [openCart, setOpenCart] = useToggle(false);
+  const {lang} = useThemeConfig()
 
   const [menu, setMenu] = useState([
     {
       icon: <MdOutlineStorefront className="text-xl text-neutral-600" />,
       title: "Cửa hàng",
-      href: "/shop",
+      href: `/${lang}/shop`,
     },
     {
       icon: <FiHeart className="text-xl text-neutral-600" />,
       title: "Yêu thích",
       count: 7,
-      href: "/wishlist",
+      href: `/${lang}/wishlist`,
     },
     {
       icon: <FiShoppingBag className="text-xl text-neutral-600" />,
       title: "Giỏ hàng",
       count: 2,
-      href: "/cart",
+      href: `/${lang}/cart`,
     },
     {
       icon: <FiUser className="text-xl text-neutral-600" />,
       title: "Tài khoản",
-      href: "/account",
+      href: `/${lang}/account`,
     },
   ]);
 
@@ -78,24 +80,24 @@ export default function HeaderMobile(props: any) {
       {
         icon: <MdOutlineStorefront className="text-xl text-neutral-600" />,
         title: "Cửa hàng",
-        href: "/shop",
+        href: `/${lang}/shop`,
       },
       {
         icon: <FiHeart className="text-xl text-neutral-600" />,
         title: "Yêu thích",
         count: totalWishlist,
-        href: "/wishlist",
+        href: `/${lang}/wishlist`,
       },
       {
         icon: <FiShoppingBag className="text-xl text-neutral-600" />,
         title: "Giỏ hàng",
         count: totalCart,
-        href: "/cart",
+        href: `/${lang}/cart`,
       },
       {
         icon: <FiUser className="text-xl text-neutral-600" />,
         title: "Tài khoản",
-        href: "/account",
+        href: `/${lang}/account`,
       },
     ]);
   }, [totalCart, totalWishlist]);
