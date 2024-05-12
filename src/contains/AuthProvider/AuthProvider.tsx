@@ -57,6 +57,7 @@ export default function AuthProvider(props: any) {
     }
     setWishlist(clone);
     Cookies.set("wishlist", JSON.stringify(clone));
+    console.log(Cookies.get('wishlist'));
   };
 
   const handlePlusQuantity = (id: number) => {

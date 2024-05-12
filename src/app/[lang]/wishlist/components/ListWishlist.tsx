@@ -24,6 +24,7 @@ export default function ListWishlist(props: any) {
             id={el.id}
             name={el.id}
             priceCurrent={el.price}
+            price={el.price}
           />
         </div>
       ))}

@@ -17,7 +17,7 @@ export default function Input(props: any) {
 
       <input
         className={`h-full bg-transparent w-full ring-neutral-200 placeholder:text-sm placeholder:text-neutral-600  outline-none ${className}`}
-        placeholder="Leave your email"
+        placeholder=""
         type="text"
         {...rest}
       />

@@ -32,13 +32,13 @@ export default function AccountInfo() {
               <label className="text-sm block font-medium mb-1" htmlFor="">
                 Email
               </label>
-              <Input placeholder="Nhập họ" />
+              <Input placeholder="Nhập Email" />
             </div>
             <div className="w-full">
               <label className="text-sm block font-medium mb-1" htmlFor="">
                 Số điện thoại
               </label>
-              <Input placeholder="Nhập họ" />
+              <Input placeholder="Nhập SĐT" />
             </div>
             <Button>Cập nhật</Button>
           </div>
