@@ -66,7 +66,7 @@ export default function HeaderDesktop(props: any) {
             <Link href="/">
               <h1 className="uppercase font-semibold text-lg text-black tracking-wide">
                 <Image
-                  src="https://www.eviromet.com/files/v1/viewFile/2cb4d3e8-3168-47ee-8fd8-a71fc315e808_logo-eviromet.png"
+                  src="https://www.eviromet.com/files/v1/viewFile/8df0cf72-00a6-4734-aa8b-1527b196d5a6_logo-enviromet.png"
                   alt="eviromet"
                   width={160}
                   height={60}
