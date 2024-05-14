@@ -13,9 +13,7 @@ import ToastProvider from "@/contains/ToastProvider";
 import { getDictionary } from "@/lib/dictionary";
 import { getListingPost } from "./blog/[name]/page";
 import Providers from "@/utlis/provider";
-import Image from "next/image";
-import messImg from "../../../public/logo-mess.png";
-import Link from "next/link";
+import MessageChar from "@/components/MessageChar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +61,7 @@ export default async function RootLayout({
     languageCode: params.lang.toUpperCase(),
     filter_status: "ACTIVE",
   });
+  
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
@@ -81,24 +80,7 @@ export default async function RootLayout({
             </ToastProvider>
           </ThemeProvider>
         </Providers>
-        <div className="fixed right-12 bottom-20 ">
-          <div className="relative top-0 group right-0 flex flex-col items-end gap-4">
-            <div className="border transition-all duration-250 translate-y-9 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 relative border-neutral-400 px-4 py-2 bg-white rounded">
-              <p>How we can help you</p>
-              <div className="absolute -bottom-2 w-3 h-3 bg-white border border-neutral-400 border-t-0 border-l-0 right-4 rotate-45"></div>
-            </div>
-            <div className="cursor-pointer">
-              <Link href="https://www.google.com/url?q=https://www.facebook.com/eviromet/&sa=D&source=editors&ust=1715359746363179&usg=AOvVaw3XYAtVT1JU3B88RXL68lC5">
-                <Image
-                  src={messImg}
-                  width={50}
-                  height={50}
-                  alt="Message Char"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
+        <MessageChar/>
       </body>
     </html>
   );
