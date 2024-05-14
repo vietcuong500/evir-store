@@ -49,7 +49,7 @@ const CartItem = (props: any) => {
         className={clsx(
           "mx-auto -mt-[18px] w-fit",
           "flex items-center justify-center",
-          "px-4 py-2 h-10 whitespace-nowrap hover:bg-green-800 ring-1 ring-transparent transition-all duration-300 active:ring-green-800 focus-visible:ring-green-800 rounded shadow-sm bg-green-600 text-white uppercase font-medium outline-none focus-within:ring-green-900 focus:ring-green-900 text-sm"
+          "px-4 py-2 h-10 whitespace-nowrap hover:bg-[#655540] ring-1 ring-transparent transition-all duration-300 active:ring-[#655540] focus-visible:ring-[#655540] rounded shadow-sm bg-[#8d765a] text-white uppercase font-medium outline-none focus-within:ring-green-900 focus:ring-green-900 text-sm"
         )}
       >
         Xem thêm
@@ -64,7 +64,7 @@ export default function FeatureService() {
   return (
     <div className="container mx-auto">
       <div>
-        <p className="text-sm text-center font-medium text-green-600">
+        <p className="text-sm text-center font-medium text-[#8d765a]">
           {service.sub_title}
         </p>
         <p className="text-xl uppercase text-neutral-800 font-medium text-center my-3">

@@ -19,7 +19,7 @@ export default function CartItem(props: any) {
           <div className="flex mt-2 items-center border border-neutral-200 w-fit">
             <button
               onClick={onMinus}
-              className="w-9 h-9 flex-center hover:bg-emerald-600 hover:text-white"
+              className="w-9 h-9 flex-center hover:bg-primary hover:text-white"
             >
               <FiMinus />
             </button>
@@ -30,7 +30,7 @@ export default function CartItem(props: any) {
             />
             <button
               onClick={onPlus}
-              className="w-9 h-9 flex-center hover:bg-emerald-600 hover:text-white"
+              className="w-9 h-9 flex-center hover:bg-primary hover:text-white"
             >
               <FiPlus />
             </button>
@@ -38,7 +38,7 @@ export default function CartItem(props: any) {
         </div>
       </div>
 
-      <p className="text-green-800 font-medium col-span-4 self-center justify-end">
+      <p className="text-[#655540] font-medium col-span-4 self-center justify-end">
         {formatCurrency(quantity * price)} VND
       </p>
       <MdClose

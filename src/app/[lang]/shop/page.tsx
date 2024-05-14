@@ -44,7 +44,7 @@ export default async function ShopPage(props: any) {
         <div className="w-full my-6 h-[1px] bg-neutral-300"></div>
         <div className="w-full h-52 bg-neutral-100">
           <div className="p-5">
-            <p className="uppercase text-emerald-700 mb-2">semper erat</p>
+            <p className="uppercase text-[#584f3f] mb-2">semper erat</p>
             <p className="text-xl capitalize text-neutral-900 font-[playfair]">
               Condim Sceleris Impertas Parturient
             </p>

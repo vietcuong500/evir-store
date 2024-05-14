@@ -36,7 +36,7 @@ export default function AccountOrders() {
                 Ngày đặt hàng:{" "}
                 <span className="font-normal">{el.create_at}</span>
               </p>
-              <p className="bg-green-600 ml-auto text-white px-2 py-1 rounded-sm shadow-sm text-xs">
+              <p className="bg-[#8d765a] ml-auto text-white px-2 py-1 rounded-sm shadow-sm text-xs">
                 Hoàn thành
               </p>
             </div>

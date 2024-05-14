@@ -76,7 +76,7 @@ export default async function PurchaseHistory(props: any) {
                 className={clsx(
                   "ml-auto px-2 py-1 rounded-sm shadow-sm text-xs",
                   {
-                    "bg-green-600 text-white": el.status === "DELIVERED",
+                    "bg-[#8d765a] text-white": el.status === "DELIVERED",
                     "bg-blue-600 text-white ":
                       el.status === "WAITING_DELIVERING",
                     "bg-neutral-200 text-black": el.status === "NEW_ORDER",

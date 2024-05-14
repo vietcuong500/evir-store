@@ -54,7 +54,7 @@ export default function FeatureCollection() {
     <div>
       <div className="container mx-auto">
         <div>
-          <p className="text-sm text-center font-medium text-green-600">
+          <p className="text-sm text-center font-medium text-[#8d765a]">
             {sub_title}
           </p>
           <p className="text-xl uppercase text-neutral-800 font-medium text-center my-3">

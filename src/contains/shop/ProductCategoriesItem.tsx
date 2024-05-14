@@ -20,7 +20,7 @@ export const ProductCategoriesItem = (props: any) => {
           "flex items-center transition-all duration-200 justify-center rounded-xl text-center text-xs w-8 h-5 border":
             true,
           "text-neutral-900 border-neutral-300 border": !active,
-          "bg-emerald-700 text-white border-transparent": active,
+          "bg-[#584f3f] text-white border-transparent": active,
         })}
       >
         {value}

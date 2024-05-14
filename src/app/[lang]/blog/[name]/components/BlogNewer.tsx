@@ -7,13 +7,13 @@ export default function BlogNewer() {
   return (
     <div className="flex flex-col xl:flex-row items-start xl:items-center justify-between">
       <div className="flex items-center gap-4 w-full xl:w-auto">
-        <div className="min-w-[2.5rem] min-h-[2.5rem] w-10 h-10 cursor-pointer transition-all duration-100 group hover:bg-green-600 rounded-full hover:border-transparent border-neutral-200 border flex-center">
+        <div className="min-w-[2.5rem] min-h-[2.5rem] w-10 h-10 cursor-pointer transition-all duration-100 group hover:bg-[#8d765a] rounded-full hover:border-transparent border-neutral-200 border flex-center">
           <FiChevronLeft className="text-2xl text-neutral-400 group-hover:text-white" />
         </div>
 
         <div className="text-sm">
           <p className="text-xs text-neutral-800">Bài viết trước</p>
-          <p className="hover:text-green-800 cursor-pointer">
+          <p className="hover:text-[#655540] cursor-pointer">
             Minimalist Japanese-inspired furniture
           </p>
         </div>
@@ -21,11 +21,11 @@ export default function BlogNewer() {
       <div className="flex items-center gap-4 w-full xl:w-auto justify-end">
         <div className="text-sm text-right">
           <p className="text-xs text-neutral-800">Bài viết sau</p>
-          <p className="hover:text-green-800 cursor-pointer">
+          <p className="hover:text-[#655540] cursor-pointer">
             Minimalist Japanese-inspired furniture
           </p>
         </div>
-        <div className="w-10 h-10 cursor-pointer transition-all duration-100 group hover:bg-green-600 rounded-full hover:border-transparent border-neutral-200 border flex-center">
+        <div className="w-10 h-10 cursor-pointer transition-all duration-100 group hover:bg-[#8d765a] rounded-full hover:border-transparent border-neutral-200 border flex-center">
           <FiChevronRight className="text-2xl text-neutral-400 group-hover:text-white" />
         </div>
       </div>

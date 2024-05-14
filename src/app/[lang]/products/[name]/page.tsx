@@ -112,7 +112,7 @@ export default async function ProductPage(props: any) {
                 ({total_review} đánh giá)
               </p>
             </div>
-            <p className="text-xl font-semibold text-emerald-600 mt-6 mb-4">
+            <p className="text-xl font-semibold text-primary mt-6 mb-4">
               {discount ? (
                 <>
                   <span className="text-neutral-700 text-base font-normal line-through mr-3">

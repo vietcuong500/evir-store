@@ -5,10 +5,10 @@ export default function Button(props: any) {
   return (
     <button
       className={clsx(
-        "px-4 py-2 h-10 whitespace-nowrap hover:bg-green-800 ring-1 ring-transparent transition-all duration-300 active:ring-green-800 focus-visible:ring-green-800 rounded shadow-sm bg-green-600 text-white uppercase font-medium outline-none focus-within:ring-green-900 focus:ring-green-900 text-sm",
+        "px-4 py-2 h-10 whitespace-nowrap hover:bg-[#655540] ring-1 ring-transparent transition-all duration-300 active:ring-[#655540] focus-visible:ring-[#655540] rounded shadow-sm bg-[#8d765a] text-white uppercase font-medium outline-none focus-within:ring-green-900 focus:ring-green-900 text-sm",
         "disabled:bg-neutral-700 disabled:bg-opacity-40",
         "flex items-center justify-center",
-        { "opacity-30 bg-green-700": loading },
+        { "opacity-30 bg-[#695e4c]": loading },
         className
       )}
       {...rest}

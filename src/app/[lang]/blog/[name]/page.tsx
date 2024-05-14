@@ -101,7 +101,7 @@ export default async function PostPage(props: any) {
   return (
     <div className="container mx-auto flex gap-8 my-8">
       <div className="w-full xl:w-9/12">
-        <p className="px-2 py-1 text-xs bg-green-700 text-white uppercase w-fit rounded-sm mx-auto">
+        <p className="px-2 py-1 text-xs bg-[#695e4c] text-white uppercase w-fit rounded-sm mx-auto">
           {data.data.category?.name}
         </p>
         <p className="text-3xl font-[playfair] text-center my-4">
@@ -122,7 +122,7 @@ export default async function PostPage(props: any) {
         <div className="my-8">
           <p className="uppercase font-medium">
             <span>Bài viết liên quan</span>
-            <span className="block h-[2px] mt-4 w-20 bg-green-800"></span>
+            <span className="block h-[2px] mt-4 w-20 bg-[#655540]"></span>
           </p>
           <div className="mt-6 grid grid-cols-2 gap-4">
             {blogs.data.slice(0, 2).map((el: any, id: number) => (

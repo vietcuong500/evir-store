@@ -98,7 +98,7 @@ export default function ReviewOrder(props: any) {
               <ModalFooter>
                 <button
                   color="primary"
-                  className="text-sm bg-green-700 h-9 px-4 py-1 text-white rounded-sm hover:bg-green-800"
+                  className="text-sm bg-[#695e4c] h-9 px-4 py-1 text-white rounded-sm hover:bg-[#655540]"
                   onClick={async () => {
                     const token = getCookie("token");
                     let not_review = [];

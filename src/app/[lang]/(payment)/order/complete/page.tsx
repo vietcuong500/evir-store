@@ -7,7 +7,7 @@ export default function OrderComplete() {
     <div className="container mx-auto py-8">
     <div className="flex flex-col items-center">
       <div
-        className={clsx("flex-center w-14 h-14 relative rounded-full bg-green-700")}
+        className={clsx("flex-center w-14 h-14 relative rounded-full bg-[#695e4c]")}
       >
         <FiCheck className="text-3xl text-white" />
       </div>

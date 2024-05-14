@@ -86,7 +86,7 @@ export default function TabsProduct(props: any) {
                             total_five_star
                           )}%`,
                         }}
-                        className="absolute left-0 top-0 h-full bg-green-500 rounded-lg"
+                        className="absolute left-0 top-0 h-full bg-[#c7c8b4] rounded-lg"
                       ></div>
                     </div>
                   </div>

@@ -10,12 +10,12 @@ export default function AuthNavigation({ user }: { user: any }) {
     <div>
       {!user ? (
         <p className="uppercase text-neutral-700">
-          <Link className="mr-1 hover:text-green-600" href={`/${lang}/login`}>
+          <Link className="mr-1 hover:text-[#8d765a]" href={`/${lang}/login`}>
             {dictionary.navigation.login}
           </Link>
           /
           <Link
-            className="ml-1 hover:text-green-600"
+            className="ml-1 hover:text-[#8d765a]"
             href={`/${lang}/register`}
           >
             {dictionary.navigation.register}

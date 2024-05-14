@@ -57,7 +57,7 @@ export default function NewsCard(props: any) {
             }}
           />
         </div>
-        <div className="absolute whitespace-nowrap z-20 cursor-pointer bg-emerald-700 text-white uppercase text-xs px-4 py-2 rounded-sm font-semibold -bottom-4 h-8 left-[50%] -translate-x-[50%]">
+        <div className="absolute whitespace-nowrap z-20 cursor-pointer bg-[#584f3f] text-white uppercase text-xs px-4 py-2 rounded-sm font-semibold -bottom-4 h-8 left-[50%] -translate-x-[50%]">
           {category}
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function NewsCard(props: any) {
         <p className="text-sm text-neutral-700 line-clamp-3">{summary}</p>
         <Link
           href={url}
-          className="text-sm transition-all duration-200 uppercase text-emerald-700 hover:text-emerald-950"
+          className="text-sm transition-all duration-200 uppercase text-[#584f3f] hover:text-emerald-950"
         >
           Đọc tiếp
         </Link>

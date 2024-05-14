@@ -9,12 +9,12 @@ export default function CustomerSay() {
   return (
     <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
       <div className="mx-auto text-center">
-        <p className="text-sm text-center font-medium text-green-600">
+        <p className="text-sm text-center font-medium text-[#8d765a]">
           {customer_say.sub_title}
         </p>
         <p className="text-xl relative uppercase text-neutral-800 font-medium text-center mb-8 mt-4">
           {customer_say.title}
-          <span className="absolute block w-14 h-1 bg-green-700 left-[50%] -translate-x-[50%] mt-2"></span>
+          <span className="absolute block w-14 h-1 bg-[#695e4c] left-[50%] -translate-x-[50%] mt-2"></span>
         </p>
         <div className="w-[100px] h-[100px] mx-auto rounded-full overflow-hidden bg-neutral-200 mb-3">
           <Image

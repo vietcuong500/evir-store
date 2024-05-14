@@ -14,7 +14,7 @@ export default function Header(props: any) {
   const router = useRouter();
   return (
     <div className="">
-      <div className="bg-emerald-600 text-white">
+      <div className="bg-primary text-white">
         <div className="hidden text-white container mx-auto h-10 text-xs xl:flex items-center justify-between">
           <div className="h-full flex items-center">
             {/* <p className="h-full text-white leading-10 px-4 border-l border-neutral-100/50 cursor-pointer">

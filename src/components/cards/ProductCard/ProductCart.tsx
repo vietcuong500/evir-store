@@ -91,7 +91,7 @@ export default function ProductCart(props: any) {
           ) : null}
         </div>
         {discount ? (
-          <div className="absolute bg-green-700 w-fit text-center px-2 top-4">
+          <div className="absolute bg-[#695e4c] w-fit text-center px-2 top-4">
             <span className="uppercase text-xs text-white whitespace-nowrap">
               - {formatCurrency(discount.value)}
               {discount.type === "FIXED" ? "VND" : "% OFF"}
@@ -103,7 +103,7 @@ export default function ProductCart(props: any) {
           <ul className="flex gap-6 bg-white w-fit px-4 py-2 rounded shadow">
             <li>
               {isAddCart ? (
-                <FiCheck className="w-6 h-6 hover:text-green-700" />
+                <FiCheck className="w-6 h-6 hover:text-[#695e4c]" />
               ) : (
                 <RiShoppingCartLine
                   onClick={() => {
@@ -116,7 +116,7 @@ export default function ProductCart(props: any) {
                       quantity: 1,
                     });
                   }}
-                  className="w-6 h-6 hover:text-green-700"
+                  className="w-6 h-6 hover:text-[#695e4c]"
                 />
               )}
             </li>
@@ -136,15 +136,15 @@ export default function ProductCart(props: any) {
                   });
                 }}
               >
-                <RiHeart3Line className="w-6 h-6 hover:text-green-700" />
+                <RiHeart3Line className="w-6 h-6 hover:text-[#695e4c]" />
               </li>
             ) : null}
 
             <li onClick={onOpen}>
-              <RiSearch2Line className="w-6 h-6 hover:text-green-700" />
+              <RiSearch2Line className="w-6 h-6 hover:text-[#695e4c]" />
             </li>
             <li>
-              <RiShareLine className="w-6 h-6 hover:text-green-700" />
+              <RiShareLine className="w-6 h-6 hover:text-[#695e4c]" />
             </li>
           </ul>
         </div>
@@ -152,7 +152,7 @@ export default function ProductCart(props: any) {
       <div className="text-center mt-4">
         <p className="text-sm">{name || "jhjka ashda sdkjashd"}</p>
         <p className="text-xs mt-2 mb-1 text-neutral-500">{category?.name}</p>
-        <p className="text-sm font-medium text-green-600">
+        <p className="text-sm font-medium text-[#8d765a]">
           {discount ? (
             <>
               <span className="line-through text-neutral-500 text-xs mr-2">

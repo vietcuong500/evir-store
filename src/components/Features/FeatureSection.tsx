@@ -97,7 +97,7 @@ export default function FeatureSection(props: any) {
     <div>
       <div className="container mx-auto">
         <div>
-          <p className="text-sm text-center font-medium text-green-600 uppercase">
+          <p className="text-sm text-center font-medium text-[#8d765a] uppercase">
             {productsConfig.sub_title}
           </p>
           <p className="text-xl uppercase text-neutral-800 font-medium text-center my-3">
@@ -124,7 +124,7 @@ export default function FeatureSection(props: any) {
                 </span>
                 <span
                   className={clsx(
-                    "inline-block h-[1px] transition-all duration-200 w-0 group-hover:w-full bg-green-600",
+                    "inline-block h-[1px] transition-all duration-200 w-0 group-hover:w-full bg-[#8d765a]",
                     {
                       "w-full": tabCurrent === el.value,
                     }

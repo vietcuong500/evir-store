@@ -14,7 +14,7 @@ export default function CollectionCart(props: any) {
       className="w-full h-56 bg-neutral-100 relative justify-center group cursor-pointer group hover:bg-neutral-400 transition-all duration-100"
     >
       <div className="absolute w-full h-full position-center z-20">
-        <p className="transition-all duration-300 uppercase position-center scale-100 group-hover:scale-0 rounded shadow text-white bg-green-600 px-4 py-3">
+        <p className="transition-all duration-300 uppercase position-center scale-100 group-hover:scale-0 rounded shadow text-white bg-[#8d765a] px-4 py-3">
           {name}
         </p>
         <Link

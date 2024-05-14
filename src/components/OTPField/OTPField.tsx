@@ -36,7 +36,7 @@ export default function OTPField() {
                   true,
                 "w-12 h-14 border border-neutral-200 rounded bg-transparent outline-none text-center text-xl focus:text-gray-900 text-gray-900 transition":
                   true,
-                "focus:ring-green-600 focus:bg-white ring-1 transition-all duration-200 ring-transparent":
+                "focus:ring-[#8d765a] focus:bg-white ring-1 transition-all duration-200 ring-transparent":
                   true,
               })}
             />

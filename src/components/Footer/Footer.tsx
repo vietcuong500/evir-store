@@ -19,7 +19,7 @@ export default function Footer(props: any) {
       <div className="container mx-auto flex flex-col xl:flex-row gap-6">
         <div className="w-full xl:w-1/2 flex flex-col md:flex-row  gap-6">
           <div className="w-full md:w-1/2">
-            <h4 className="text-3xl font-semibold text-lime-700">Eviromet.</h4>
+            <h4 className="text-3xl font-semibold text-[#7b725e]">Eviromet.</h4>
             <p className="text-neutral-700 mt-2 mb-4 text-sm">{footer.desc}</p>
             <ul className="flex flex-col gap-2">
               <li className="flex items-center gap-2 text-sm text-neutral-800">

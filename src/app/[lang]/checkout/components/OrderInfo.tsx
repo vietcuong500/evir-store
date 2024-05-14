@@ -129,7 +129,7 @@ function OrderInfo() {
           <textarea
             id="note"
             placeholder="Ghi chú cho cửa hàng về dơn hàng này"
-            className="h-full border px-3 py-2 rounded ring-1 ring-transparent focus:ring-green-600 transition-all duration-200 border-neutral-200 bg-transparent w-full ring-neutral-200 placeholder:text-sm placeholder:text-neutral-600  outline-none"
+            className="h-full border px-3 py-2 rounded ring-1 ring-transparent focus:ring-[#8d765a] transition-all duration-200 border-neutral-200 bg-transparent w-full ring-neutral-200 placeholder:text-sm placeholder:text-neutral-600  outline-none"
           />
         </div>
       </div>

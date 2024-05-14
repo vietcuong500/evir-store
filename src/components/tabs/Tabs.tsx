@@ -17,7 +17,7 @@ export default function Tabs(props: any) {
           <p
             id=""
             className={clsx({
-              "w-0 group-hover:w-full h-1 bg-emerald-600 transition-all duration-300":
+              "w-0 group-hover:w-full h-1 bg-primary transition-all duration-300":
                 true,
               "w-full": value === el.value,
             })}

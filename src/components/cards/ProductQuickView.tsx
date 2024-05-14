@@ -46,7 +46,7 @@ export default function ProductQuickView(props: any) {
                 ) : null}
 
                 <Link
-                  className="absolute z-10 bg-green-700 text-white h-10 w-full -bottom-[10px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 group-hover:bottom-0 left-0 flex items-center justify-center uppercase text-sm"
+                  className="absolute z-10 bg-[#695e4c] text-white h-10 w-full -bottom-[10px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 group-hover:bottom-0 left-0 flex items-center justify-center uppercase text-sm"
                   href={url}
                 >
                   Xem chi tiết
@@ -66,7 +66,7 @@ export default function ProductQuickView(props: any) {
                     ({total_review} đánh giá)
                   </p>
                 </div>
-                <p className="font-medium text-green-600 mb-3">
+                <p className="font-medium text-[#8d765a] mb-3">
                   {discount ? (
                     <>
                       <span className="line-through text-neutral-500 text-xs mr-2">

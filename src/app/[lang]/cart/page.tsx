@@ -80,7 +80,7 @@ export default function CartPage() {
               </p>
               <p className="flex items-center justify-between mt-4 uppercase font-semibold">
                 <span className=""> Tổng cộng</span>
-                <span className="text-green-700">
+                <span className="text-[#695e4c]">
                   {formatCurrency(totalPrice)} VND
                 </span>
               </p>

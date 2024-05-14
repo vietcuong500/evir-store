@@ -17,7 +17,7 @@ export default function ButtonAddCart(props: any) {
           onClick={() => {
             if (quantity > 0) setQuantity(quantity - 1);
           }}
-          className="w-9 h-9 flex-center hover:bg-green-600 hover:text-white"
+          className="w-9 h-9 flex-center hover:bg-[#8d765a] hover:text-white"
         >
           <FiMinus />
         </button>
@@ -28,7 +28,7 @@ export default function ButtonAddCart(props: any) {
         />
         <button
           onClick={() => setQuantity(quantity + 1)}
-          className="w-9 h-9 flex-center hover:bg-green-600 hover:text-white"
+          className="w-9 h-9 flex-center hover:bg-[#8d765a] hover:text-white"
         >
           <FiPlus />
         </button>

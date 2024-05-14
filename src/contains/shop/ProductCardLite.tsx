@@ -43,7 +43,7 @@ export default function ProductCardLite(props: any) {
         <p className="text-neutral-600 line-clamp-2 cursor-pointer hover:text-lime-800">
           {name}
         </p>
-        <p className="text-sm text-green-600 font-medium">
+        <p className="text-sm text-[#8d765a] font-medium">
           {formatCurrency(price)} VND
         </p>
         <Rating

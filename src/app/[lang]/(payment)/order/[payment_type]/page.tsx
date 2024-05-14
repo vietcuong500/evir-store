@@ -34,7 +34,7 @@ export default async function PaymentPage(props: any) {
       <div className="flex flex-col items-center">
         <div
           className={clsx("flex-center w-14 h-14 relative rounded-full ", {
-            "bg-green-700": data.code === 200,
+            "bg-[#695e4c]": data.code === 200,
             "bg-red-600": data.code !== 200,
           })}
         >

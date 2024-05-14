@@ -46,7 +46,7 @@ export default function HeaderDesktop(props: any) {
         <div className="text-sm py-4 container mx-auto grid grid-cols-12">
           <div className="flex items-center gap-8 col-span-4">
             <div className="flex items-center gap-3 text-neutral-800">
-              <RiPhoneFill className="w-8 h-8 text-green-600" />
+              <RiPhoneFill className="w-8 h-8 text-[#8d765a]" />
               <div>
                 <p className="font-medium">{header.title1}</p>
                 <span className="text-neutral-500 font-light">
@@ -121,9 +121,9 @@ export default function HeaderDesktop(props: any) {
               </Link>
               <span
                 className={clsx({
-                  "inline-block h-[1px] w-0 transition-all duration-200 group-hover:w-full bg-green-600":
+                  "inline-block h-[1px] w-0 transition-all duration-200 group-hover:w-full bg-[#8d765a]":
                     true,
-                  "bg-green-600 w-full":
+                  "bg-[#8d765a] w-full":
                     (idx !== 0 && pathname.includes(el.href)) ||
                     pathname === el.href,
                 })}
@@ -146,9 +146,9 @@ export default function HeaderDesktop(props: any) {
                 </Link>
                 <span
                   className={clsx({
-                    "inline-block h-[1px] w-0 transition-all duration-200 group-hover:w-full bg-green-600":
+                    "inline-block h-[1px] w-0 transition-all duration-200 group-hover:w-full bg-[#8d765a]":
                       true,
-                    "bg-green-600 w-full":
+                    "bg-[#8d765a] w-full":
                       (idx !== 0 && pathname.includes(el.href)) ||
                       pathname === el.href,
                   })}

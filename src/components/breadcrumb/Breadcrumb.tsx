@@ -15,7 +15,7 @@ export default function Breadcrumb(props: any) {
         <div key={id}>
           <Link
             className={clsx({
-              "hover:text-green-800 inline-block mr-2": true,
+              "hover:text-[#655540] inline-block mr-2": true,
               "font-semibold": el.active,
             })}
             href={`/${lang}/${el.href}`}

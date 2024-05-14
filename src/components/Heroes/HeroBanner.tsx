@@ -12,14 +12,14 @@ export default function HeroBanner() {
       <div className="container mx-auto flex flex-col lg:flex-row gap-8 h-auto">
         <div className="grow w-full lg:w-1/2 h-[26rem] bg-neutral-100 p-8 relative">
           <div className="relative z-10">
-            <p className="mb-6 uppercase text-green-600 text-sm">
+            <p className="mb-6 uppercase text-[#8d765a] text-sm">
               {hero[0].sub_title}
             </p>
             <h3 className="text-4xl text-neutral-900 capitalize w-1/4 font-[playfair]">
               {hero[0].title}
             </h3>
             <Link
-              className="uppercase hover:text-neutral-900 border-b border-green-500 text-sm text-neutral-800 font-medium mt-4 inline-block"
+              className="uppercase hover:text-neutral-900 border-b border-[#c7c8b4] text-sm text-neutral-800 font-medium mt-4 inline-block"
               href={hero[0].link}
             >
               read more
@@ -35,14 +35,14 @@ export default function HeroBanner() {
         <div className="grow w-full lg:w-1/2 h-[26rem] flex flex-col gap-y-8">
           <div className="h-1/2 w-full relative bg-neutral-100 p-5">
             <div className="relative z-10">
-              <p className="mb-4 uppercase text-green-600 text-sm">
+              <p className="mb-4 uppercase text-[#8d765a] text-sm">
                 {hero[1].sub_title}
               </p>
               <h3 className="text-2xl text-neutral-900 capitalize w-1/3 font-[playfair]">
                 {hero[1].title}
               </h3>
               <Link
-                className="uppercase hover:text-neutral-900 border-b border-green-500 text-xs text-neutral-800 font-medium mt-2 inline-block"
+                className="uppercase hover:text-neutral-900 border-b border-[#c7c8b4] text-xs text-neutral-800 font-medium mt-2 inline-block"
                 href={hero[1].link}
               >
                 read more
@@ -60,14 +60,14 @@ export default function HeroBanner() {
           <div className="flex items-stretch w-full h-1/2 gap-8">
             <div className="w-full relative h-full bg-neutral-100 p-5">
               <div className="relative z-10">
-                <p className="mb-4 uppercase text-green-600 text-sm">
+                <p className="mb-4 uppercase text-[#8d765a] text-sm">
                   {hero[2].sub_title}
                 </p>
                 <h3 className="text-2xl text-neutral-900 capitalize w-1/2 font-[playfair]">
                   {hero[2].title}
                 </h3>
                 <Link
-                  className="uppercase hover:text-neutral-900 border-b border-green-500 text-xs text-neutral-800 font-medium mt-2 inline-block"
+                  className="uppercase hover:text-neutral-900 border-b border-[#c7c8b4] text-xs text-neutral-800 font-medium mt-2 inline-block"
                   href={hero[2].link}
                 >
                   read more

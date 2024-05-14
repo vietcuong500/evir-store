@@ -38,7 +38,7 @@ const config: Config = {
         playfair: ["PlayfairDisplay"],
       },
       colors: {
-        'primary': '#af9d7e'
+        'primary': '#9e8d71'
       }
     },
   },

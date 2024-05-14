@@ -91,7 +91,7 @@ function OrderSummary() {
         <div className="w-full h-[1px] bg-neutral-300 my-3"></div>
         <div className="flex items-center justify-between font-semibold">
           <p className="text-neutral-700">Tổng tiền</p>
-          <p className="text-green-800 font-medium">
+          <p className="text-[#655540] font-medium">
             {formatCurrency(subtotal)} vnd
           </p>
         </div>

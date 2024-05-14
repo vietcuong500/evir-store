@@ -46,7 +46,7 @@ export default function RelatedProducts(props: any) {
         <p className="uppercase font-semibold text-neutral-800 py-2">
           Có thể bạn sẽ thích
         </p>
-        <p className="w-1/2 h-[2px] bg-green-700"></p>
+        <p className="w-1/2 h-[2px] bg-[#695e4c]"></p>
       </div>
 
       <Slider {...settings}>

@@ -55,13 +55,13 @@ export default function DrawerCart(props: any) {
               </div>
               <div className="grow">
                 <p className="text-sm font-medium">{el.name}</p>
-                <p className="text-green-700 text-sm">
+                <p className="text-[#695e4c] text-sm">
                   {formatCurrency(el.price)} vnd
                 </p>
                 <div className="flex items-center border border-neutral-200 w-fit rounded mt-2">
                   <button
                     onClick={() => handleMinusQuantity(el.id)}
-                    className="w-8 h-8 flex-center hover:bg-emerald-600 hover:text-white"
+                    className="w-8 h-8 flex-center hover:bg-primary hover:text-white"
                   >
                     <FiMinus />
                   </button>
@@ -75,7 +75,7 @@ export default function DrawerCart(props: any) {
                   />
                   <button
                     onClick={() => handlePlusQuantity(el.id)}
-                    className="w-8 h-8 flex-center hover:bg-emerald-600 hover:text-white"
+                    className="w-8 h-8 flex-center hover:bg-primary hover:text-white"
                   >
                     <FiPlus />
                   </button>
@@ -92,7 +92,7 @@ export default function DrawerCart(props: any) {
         <div className="px-5 py-3 border-t border-neutral-200 flex flex-col gap-2">
           <p className="flex justify-between uppercase font-semibold">
             <span className="text-sm text-neutral-800">Thành tiền</span>
-            <span className="text-green-700">{formatCurrency(total)} VND</span>
+            <span className="text-[#695e4c]">{formatCurrency(total)} VND</span>
           </p>
           <button
             onClick={() => router.push(`/${lang}/cart`)}
