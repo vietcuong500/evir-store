@@ -26,9 +26,9 @@ export default function ProductQuickView(props: any) {
 
   const { lang } = useThemeConfig();
 
-  const { total_review, avg_star } = review;
+  const { total_review, avg_star } = review || {};
   const url = queryString.stringifyUrl({
-    url: `${lang}/products/${name}`,
+    url: `/${lang}/products/${name}`,
     query: {
       product_id: id,
     },

@@ -136,7 +136,7 @@ export default async function ProductPage(props: any) {
               {formatCurrency(stock)} sản phẩm
             </p>
 
-            <ButtonAddCart item={result} />
+            <ButtonAddCart item={{...result, image: images}} />
             <ButtonCheckout item={result} />
             <ButtonAddWishlist item={result} />
 

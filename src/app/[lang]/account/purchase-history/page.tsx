@@ -50,7 +50,6 @@ export default async function PurchaseHistory(props: any) {
   const query = Object.fromEntries(Object.entries(searchParams));
   const data = await getOrders(query);
 
-  console.log(data.data[0].order_details);
   return (
     <div>
       <div className="">

@@ -32,9 +32,11 @@ export default function ProductCart(props: any) {
     summary,
     priceCurrent,
     onClick,
+    isAddWishList = true,
   } = props;
+
   const router = useRouter();
-  const {lang} = useThemeConfig()
+  const { lang } = useThemeConfig();
   const { handleAddCart, handleAddWishlist } = useAuth();
 
   const [isAddCart, setIsAddCart] = useState(false);
@@ -91,7 +93,7 @@ export default function ProductCart(props: any) {
         {discount ? (
           <div className="absolute bg-green-700 w-fit text-center px-2 top-4">
             <span className="uppercase text-xs text-white whitespace-nowrap">
-              -{" "}{formatCurrency(discount.value)}
+              - {formatCurrency(discount.value)}
               {discount.type === "FIXED" ? "VND" : "% OFF"}
             </span>
           </div>
@@ -118,19 +120,26 @@ export default function ProductCart(props: any) {
                 />
               )}
             </li>
-            <li
-              onClick={() => {
-                handleAddWishlist({
-                  image,
-                  name,
-                  price: priceCurrent,
-                  id,
-                  quantity: 1,
-                });
-              }}
-            >
-              <RiHeart3Line className="w-6 h-6 hover:text-green-700" />
-            </li>
+            {isAddWishList ? (
+              <li
+                onClick={() => {
+                  handleAddWishlist({
+                    image,
+                    name,
+                    price: price,
+                    priceCurrent: priceCurrent,
+                    discount: discount,
+                    id,
+                    quantity: 1,
+                    summary,
+                    review,
+                  });
+                }}
+              >
+                <RiHeart3Line className="w-6 h-6 hover:text-green-700" />
+              </li>
+            ) : null}
+
             <li onClick={onOpen}>
               <RiSearch2Line className="w-6 h-6 hover:text-green-700" />
             </li>

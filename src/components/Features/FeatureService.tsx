@@ -61,7 +61,6 @@ const CartItem = (props: any) => {
 export default function FeatureService() {
   const config: any = useThemeConfig();
   const { service } = config;
-  console.log(service)
   return (
     <div className="container mx-auto">
       <div>

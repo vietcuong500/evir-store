@@ -32,7 +32,7 @@ export default function DrawerSidebar(props: any) {
         </li>
         <li
           onClick={() => {
-            router.push(lang + "/shop?page=1&page_size=12");
+            router.push(`/${lang}/shop?page=1&page_size=12`);
             setOpen();
           }}
           className="px-5 py-3 border-b border-neutral-200 cursor-pointer"
@@ -41,7 +41,7 @@ export default function DrawerSidebar(props: any) {
         </li>
         <li
           onClick={() => {
-            router.push(lang + "/blog?page=1&page_size=9");
+            router.push(`/${lang}/blog?page=1&page_size=9`);
             setOpen();
           }}
           className="px-5 py-3 border-b border-neutral-200 cursor-pointer"
@@ -52,7 +52,7 @@ export default function DrawerSidebar(props: any) {
           .filter((el: any) => el.status === "ACTIVE")
           .map((el: any) => ({
             title: el.title,
-            href: `${lang}/${el.slug}?page=${el.id}`,
+            href: `/${lang}/${el.slug}?page=${el.id}`,
           }))
           .map((el: any, idx: number) => (
             <li
@@ -71,7 +71,7 @@ export default function DrawerSidebar(props: any) {
             <span
               className="cursor-pointer"
               onClick={() => {
-                router.push(lang + "/account");
+                router.push(`/${lang}/account`);
                 setOpen();
               }}
             >
@@ -81,7 +81,7 @@ export default function DrawerSidebar(props: any) {
             <>
               <span
                 onClick={() => {
-                  router.push(lang + "/login");
+                  router.push(`/${lang}/login`);
                   setOpen();
                 }}
               >
@@ -90,7 +90,7 @@ export default function DrawerSidebar(props: any) {
               /
               <span
                 onClick={() => {
-                  router.push(lang + "/register");
+                  router.push(`/${lang}/register`);
                   setOpen();
                 }}
               >

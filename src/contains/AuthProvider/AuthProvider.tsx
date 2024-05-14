@@ -38,7 +38,7 @@ export default function AuthProvider(props: any) {
       clone = [...clone, item];
     } else {
       clone = clone.map((el: any) =>
-        el.id === item.id ? { ...el, quantity: el.quantity + 1 } : el
+        el.id === item.id ? { ...el, quantity: el.quantity + item?.quantity || 1 } : el
       );
     }
     setCart(clone);
@@ -57,7 +57,6 @@ export default function AuthProvider(props: any) {
     }
     setWishlist(clone);
     Cookies.set("wishlist", JSON.stringify(clone));
-    console.log(Cookies.get('wishlist'));
   };
 
   const handlePlusQuantity = (id: number) => {
@@ -124,7 +123,6 @@ export default function AuthProvider(props: any) {
     }
     const cartTemp = Cookies.get("cart");
     if (cartTemp) {
-      //console.log(cartTemp);
       const temp = Array.from(JSON.parse(cartTemp));
       setCart(temp);
     }

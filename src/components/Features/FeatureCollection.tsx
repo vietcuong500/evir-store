@@ -48,7 +48,6 @@ export default function FeatureCollection() {
         collection: id,
       },
     });
-    console.log(url)
     return url;
   };
   return (

@@ -125,7 +125,7 @@ export default function HeaderMobile(props: any) {
           </Link>
           <div className="">
             <Tooltip title="cart">
-              <Badge count={3}>
+              <Badge count={totalCart}>
                 <RiShoppingBasket2Line
                   onClick={setOpenCart}
                   className="w-5 h-5 cursor-pointer"

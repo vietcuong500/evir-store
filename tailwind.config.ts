@@ -37,6 +37,9 @@ const config: Config = {
       fontFamily: {
         playfair: ["PlayfairDisplay"],
       },
+      colors: {
+        'primary': '#af9d7e'
+      }
     },
   },
   darkMode: "class",

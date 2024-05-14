@@ -8,7 +8,7 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 export default function ButtonAddCart(props: any) {
   const { item } = props;
   const { handleAddCart } = useAuth();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const { image, name, id, price_current } = item;
   return (
     <div className="flex items-center gap-4 mt-3 max-w-[320px]">

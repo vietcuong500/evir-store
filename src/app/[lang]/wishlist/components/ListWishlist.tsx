@@ -22,9 +22,13 @@ export default function ListWishlist(props: any) {
           <ProductCart
             image={el.image}
             id={el.id}
-            name={el.id}
-            priceCurrent={el.price}
-            price={el.price}
+            name={el.name}
+            priceCurrent={el?.priceCurrent}
+            price={el?.price}
+            discount={el?.discount}
+            isAddWishList={false}
+            review={el?.review}
+            summary={el?.summary}
           />
         </div>
       ))}

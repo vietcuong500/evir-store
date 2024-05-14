@@ -1,5 +1,4 @@
-import { Breadcrumb, ProductCart } from "@/components";
-import { MdClose } from "react-icons/md";
+import { Breadcrumb } from "@/components";
 import ListWishlist from "./components/ListWishlist";
 
 export default function WishlistPage() {
