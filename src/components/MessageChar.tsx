@@ -23,7 +23,7 @@ function MessageChar() {
             </div>
           ) : null}
           <div className="cursor-pointer">
-            <Link href="https://www.google.com/url?q=https://www.facebook.com/eviromet/&sa=D&source=editors&ust=1715359746363179&usg=AOvVaw3XYAtVT1JU3B88RXL68lC5">
+            <Link href="https://www.facebook.com/eviromet/">
               <Image src={messImg} width={50} height={50} alt="Message Char" />
             </Link>
           </div>

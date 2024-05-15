@@ -1,13 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { Button, Input } from "@/components";
+import { useThemeConfig } from "@/contains/ThemesProvider/ThemesProvider";
 import { FiMail } from "react-icons/fi";
 
-export default function NewsLetter() {
+export default function NewsLetter(props: any) {
+  const { lang, dictionary } = useThemeConfig();
+
   return (
     <div className="bg-neutral-50 relative h-56">
       <div className="absolute w-full h-full top-0 left-0">
         <Image
-          src="https://eviromet.com/files/v1/viewFile/fed99212-d72b-4236-b38e-4a6ea808df07_banner-handmade.jpg"
+          src="https://www.eviromet.com/files/v1/viewFile/fed99212-d72b-4236-b38e-4a6ea808df07_banner-handmade.jpg"
           alt="banner"
           priority={true}
           sizes="100vw"
@@ -28,7 +33,7 @@ export default function NewsLetter() {
           </div>
           <div className="flex mt-4 xl:mt-0 items-stretch gap-4">
             <Input iconStart={<FiMail className="text-neutral-600" />} />
-            <Button>Sign up</Button>
+            <a href={`/${lang}/login`}><Button>Sign up</Button></a>
           </div>
         </div>
       </div>
