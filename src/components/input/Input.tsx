@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { FiSearch } from "react-icons/fi";
 
 export default function Input(props: any) {
-  const { className, iconStart, iconEnd, ...rest } = props;
+  const { className, iconStart, iconEnd, placeholder, ...rest } = props;
   return (
     <div
       className={clsx({
@@ -17,7 +17,7 @@ export default function Input(props: any) {
 
       <input
         className={`h-full bg-transparent w-full ring-neutral-200 placeholder:text-sm placeholder:text-neutral-600  outline-none ${className}`}
-        placeholder=""
+        placeholder={placeholder}
         type="text"
         {...rest}
       />
